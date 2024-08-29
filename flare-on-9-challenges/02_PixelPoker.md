@@ -1,6 +1,6 @@
 # Flare-On 9
 ## Challenge 02: PixelPoker
-For these challenges, I will be using Kali Linux as my environment
+For these challenges, I will be using REMnux and FlareVM as my environments
 
 ### Initial Thoughts
 The first thing I noticed is that unzipping the file produce an executable. So, naturally, I decided to run it. However, this is when I learned that Kali Linux does not have a built in way to run executables, so I 
