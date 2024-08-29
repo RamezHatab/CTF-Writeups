@@ -1,6 +1,6 @@
 # Flare-On 9
 ## Challenge 01: Flaredle
-For these challenges, I will be using Kali Linux as my environment
+For these challenges, I will be using REMnux and FlareVM as my environments
 
 ### Initial Thoughts
 Starting off, I unzipped the file and noticed that there were html, js, and css files. This led me to believe I would be interacting with a webpage. So, using that information, I loaded up a local web server to observe the challenge.
