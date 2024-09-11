@@ -58,7 +58,7 @@ We can see there appears to be some sort of nibbleblog directory, so I navigated
 
 This leads us to a dead end, so the next step is to find directories to explore.
 
-### Using Gobuster to enumerate directories
+### Using Gobuster to Enumerate Directories
 
 
 
