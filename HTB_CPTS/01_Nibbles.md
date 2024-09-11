@@ -43,7 +43,7 @@ I think we have gotten enough relevant information about the system fromm enumer
 
 ## Web Footprinting
 
-## Initial Findings
+### Initial Findings
 If we go in blind and navigate to the IP in our browser, we get this webpage:
 
 ![image](https://github.com/user-attachments/assets/36ed8577-483f-420f-a88d-cdffc9da18d1)
@@ -58,7 +58,7 @@ We can see there appears to be some sort of nibbleblog directory, so I navigated
 
 This leads us to a dead end, so the next step is to find directories to explore.
 
-## Using Gobuster to enumerate directories
+### Using Gobuster to enumerate directories
 
 
 
