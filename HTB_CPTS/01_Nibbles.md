@@ -1,4 +1,4 @@
-# HTB | Nibbles Walkthrough
+![image](https://github.com/user-attachments/assets/ad4f8218-7426-4dce-b5e6-35625e7f5c8c)# HTB | Nibbles Walkthrough
 
 During this walkthrough I am going to solve the "Nibbles" box on HTB and explain my thought process and how I attack this problem. Let's jump into it! 
 
@@ -59,8 +59,28 @@ We can see there appears to be some sort of nibbleblog directory, so I navigated
 This leads us to a dead end, so the next step is to find directories to explore.
 
 ### Using Gobuster to Enumerate Directories
+By using ```gobuster```, we can find what other directories that exist on this webpage. Running this command: 
 
+```gobuster dir -u http://10.129.7.207/nibbleblog/ --wordlist /usr/share/dirb/wordlists/common.txt```
 
+we begin gobuster in directory enumeration mode. We get this output from out scan:
+
+![image](https://github.com/user-attachments/assets/b8c92da6-49c3-4fd2-a569-637afebe7001)
+
+From these results, we can see that there are a couple of directories that returned ```(Status: 301)``` which means we can explore those webpages. Starting off with the one that sounds interesting, I went to ```http://10.129.7.207/nibbleblog/admin```. There, we got this significant looking webpage with a ton of different directories to explore.
+
+![image](https://github.com/user-attachments/assets/c7201fca-25a5-4de3-9c54-fb6b3ab86816)
+
+After iterating through the directories, I found nothing special. So I decided to try the next webpage, ```http://10.129.7.207/nibbleblog/content```. Here I found the path ```/content/private/users.xml```. There I found this lovely piece of information: 
+
+![image](https://github.com/user-attachments/assets/79bb212b-54dd-4a6b-9b4f-ee7fd76e228b)
+
+We have successfully retrieved a password for the login: admin!
+Now, we are just missing a valid password. I got stuck here since nothing was really pointing me in the right direction, but using HTB to help me I realized it would just be smart to use common words found on the webpage and in different files. So, trying variations of admin passwords and such, I finally tried ```nibbles``` for the password, and that worked! We are in!
+
+![image](https://github.com/user-attachments/assets/a77c2f76-4c5d-4f91-9fca-292d0ce771e9)
+
+## Gaining an Initial Foothold
 
 
 
