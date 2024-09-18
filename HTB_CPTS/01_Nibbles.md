@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ad4f8218-7426-4dce-b5e6-35625e7f5c8c)# HTB | Nibbles Walkthrough
+# HTB | Nibbles Walkthrough
 
 During this walkthrough I am going to solve the "Nibbles" box on HTB and explain my thought process and how I attack this problem. Let's jump into it! 
 
