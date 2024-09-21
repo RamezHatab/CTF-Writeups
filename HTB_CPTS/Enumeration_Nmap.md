@@ -34,7 +34,7 @@ We can scan a given list of IPs ```hosts.lst``` with:
 
 ```sudo nmap -sn -oA tnet -iL hosts.lst | grep for | cut -d" " -f5```
 
-### Actiivity
+### Activity
 Based on the last result, find out which operating system it belongs to. Submit the name of the operating system as result.
 
 Using the fact that ttl of 128 usually indicates a Windows system, that is our answer.
